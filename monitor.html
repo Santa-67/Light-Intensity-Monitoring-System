@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor Light Intensity</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="monitor-container">
+        <!-- Heading for the Monitoring Page -->
+        <h1 class="monitor-heading">Monitor Light Intensity</h1>
+        
+        <form>
+            <label for="date-input">Date (YYYY-MM-DD):</label>
+            <input type="date" id="date-input" name="date-input">
+            <label for="time-input">Time (HH:MM:SS):</label>
+            <input type="text" id="time-input" name="time-input" placeholder="HH:MM:SS" pattern="\d{2}:\d{2}:\d{2}">
+            <button id="search-button" type="button">Search</button>
+        </form>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>LDR Value</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIGHT INTENSITY MONITORING SYSTEM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Container for image and heading -->
+        <div class="image-container">
+            <!-- Heading placed over the image -->
+            <h1>LIGHT INTENSITY MONITORING SYSTEM</h1>
+            <!-- Collage image inserted here -->
+            <img src="image.png" alt="Light Intensity Monitoring System Collage">
+        </div>
+        
+        <!-- Project Information -->
+        <div class="project-info">
+            <h2>About the Project</h2>
+            <p>This project is a cloud-based light intensity monitoring system designed to track real-time light levels in various environments. The system utilizes a Light Dependent Resistor (LDR) connected to a Raspberry Pi model, which measures the intensity of light.</p>
+            <p>The collected data is sent to Firebase Cloud, where it is stored securely along with a timestamp. This allows users to monitor changes in light intensity over time, making it ideal for applications in smart homes, greenhouses, and other environments where light levels need to be monitored.</p>
+            <p>The data, along with its respective timestamp, can be viewed and monitored on a web page, providing a user-friendly interface for tracking light levels.</p>
+            <button id="monitor-button" type="button">Let's Monitor</button>
+        </div>
+    </div>
+
+    <script>
+        // Event listener for the "Let's Monitor" button
+        document.getElementById('monitor-button').addEventListener('click', () => {
+            window.open('monitor.html', '_blank');
+        });
+    </script>
+</body>
+
+</html>

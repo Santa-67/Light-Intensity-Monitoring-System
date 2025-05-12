@@ -1,0 +1,188 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+/* Style for the container holding the image and form */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the image container */
+.image-container {
+    position: relative; /* Position the heading relative to this container */
+    text-align: center; /* Center text horizontally */
+    overflow: hidden; /* Ensure the heading doesn't overflow the container */
+}
+
+/* Style for the collage image */
+.image-container img {
+    width: 100%; /* Cover the entire width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit the height of the image */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    opacity: 0.7; /* Reduced visibility of the image */
+}
+
+/* Style for the header placed over the image */
+.image-container h1 {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to truly center the element */
+    color: #FFFFFF; /* Bright white color for high contrast */
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better visibility */
+    border-radius: 8px;
+    width: 80%; /* Adjust width as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added shadow for improved readability */
+}
+
+.project-info {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left; /* Left-align text for better readability */
+}
+
+/* Style for project information heading */
+.project-info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif; /* Different font for headings */
+}
+
+/* Style for paragraphs in project information */
+.project-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif; /* Different font for body text */
+}
+
+/* Style for the "Let's Monitor" button */
+#monitor-button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#monitor-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Monitor page specific styles */
+.monitor-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.monitor-heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the search form */
+form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for labels */
+label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Style for inputs */
+input[type="date"],
+input[type="text"] {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 180px;
+    background-color: #fff;
+}
+
+/* Style for the search button */
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the table */
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+/* Style for table headers */
+th {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Style for table data cells */
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Style for alternate rows */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for hover effect */
+tbody tr:hover {
+    background-color: #ddd;
+}
